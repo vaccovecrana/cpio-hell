@@ -32,6 +32,7 @@ public class CoExpand {
         if (e.isDirectory()) {
           out.toFile().mkdirs();
         } else {
+          out.getParent().toFile().mkdirs();
           Files.copy(ais, out, StandardCopyOption.REPLACE_EXISTING);
           Set<PosixFilePermission> perms;
           if (e instanceof TarArchiveEntry) {
