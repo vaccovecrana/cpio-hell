@@ -12,5 +12,5 @@ configure<io.vacco.oss.gitflow.GsPluginProfileExtension> {
 val api by configurations
 
 dependencies {
-  api("org.apache.commons:commons-compress:1.20")
+  api("org.apache.commons:commons-compress:1.22")
 }
